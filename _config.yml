@@ -1,0 +1,10 @@
+# Site settings
+title: 方大米的前端随记
+description: > # this means to ignore newlines until "baseurl:"
+  记录自己在学习、工作中学到的一些前端知识
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://sylviaf.github.io/" # the base hostname & protocol for your site
+github_username:  sylviaf
+
+# Build settings
+markdown: kramdown
