@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于 [方大米](http://sylviaf.github.io/)
+title: 关于 方大米的前端随记
 permalink: /about/
 ---
 方大米的前端知识的记录
