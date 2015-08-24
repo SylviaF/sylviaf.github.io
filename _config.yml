@@ -9,3 +9,9 @@ github_username:  sylviaf
 # Build settings
 markdown: kramdown
 permalink: /:year/:month/:day/:title
+
+# 多说的评论功能配置
+comments:
+    provider: duoshuo
+    duoshuo:
+      short_name: sylviaf
