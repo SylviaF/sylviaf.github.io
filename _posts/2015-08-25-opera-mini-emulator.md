@@ -26,7 +26,7 @@ categories: "兼容"
 4. 安装opera mini的jar包  
 通过File > Open MIDlet File，选择你下载的opera mini的jar包。这样opera mini就安装到Microemulator里
 
-5. 双击opera mini按钮，就可以在你的电脑上模拟手机的opera mini了(≖ ‿ ≖)✧
+5. 双击opera mini按钮，就可以在你的电脑上模拟手机的opera mini了(≖ ‿ ≖)✧  
 ![microemulator with operamini](/images/opera-mini-emulator/microEmulatorOperamini.png "microemulator with operamini")
 ![microemulator with operamini](/images/opera-mini-emulator/microEmulatorOperamini1.png "microemulator with operamini")
 
