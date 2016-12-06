@@ -1,7 +1,9 @@
 /**
  * Site header
  */
+$opacityWhite: rgba(255,255,255,0.9);
 .site-header {
+    background: $opacityWhite;
     border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
@@ -92,6 +94,7 @@
  * Site footer
  */
 .site-footer {
+    background: $opacityWhite;
     border-top: 1px solid $grey-color-light;
     padding: $spacing-unit 0;
 }
@@ -162,7 +165,13 @@
  * Page content
  */
 .page-content {
-    padding: $spacing-unit 0;
+    margin: $spacing-unit 0;
+    > .wrapper{
+        padding: $spacing-unit;
+        background: $opacityWhite;
+        border-radius: 10px;
+    }
+
 }
 
 .page-heading {
@@ -181,6 +190,7 @@
 .post-meta {
     font-size: $small-font-size;
     color: $grey-color;
+    text-align: right;
 }
 
 .post-link {
@@ -232,5 +242,58 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+.pagination{
+    text-align: center;
+    .page_number{
+        padding: 0 10px;
+    }
+    .disabled{
+        color: #c0baba;
+    }
+}
+
+.page-pagination{
+    margin: 20px 0;
+    border-top: 1px solid rgba(0,0,0,0.13);
+    border-bottom: 1px solid rgba(0,0,0,0.13);
+    overflow: hidden;
+    zoom: 1;
+    width: 100%;
+    h3{
+        font-weight: 900;
+        margin-bottom: 0;
+        font-size: 18px;
+        font-size: 1.125rem;
+        max-width: 100%;
+        white-space: nowrap;
+        overflow:hidden; 
+        text-overflow:ellipsis
+    }
+    span{
+        display: block;
+        font-size: 14px;
+        font-size: .875rem;
+        color: #a2a2a2;
+    }
+    a{
+        padding: 20px 0;
+        width: 49%;
+        color: #222;
+        text-decoration: none;
+
+        &:hover{
+            background: #fff;
+        }
+    }
+    .previous{
+        text-align: left;
+        float: left;
+    }
+    .next{
+        text-align: right;
+        float: right;
     }
 }

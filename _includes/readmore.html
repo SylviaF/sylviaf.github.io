@@ -1,0 +1,25 @@
+<!-- Pagination links -->
+<div class="page-pagination">
+  {% if page.previous.url %}
+    <a href="{{page.previous.url}}" class="previous">
+    	<h3>{{page.previous.title}}</h3>
+    	<span>{{page.previous.date}}</span>
+    </a>
+  {% else if page.next.next.url %}
+    <a href="{{page.next.next.url}}" class="previous">
+    	<h3>{{page.next.next.title}}</h3>
+    	<span>{{page.next.next.date}}</span>
+    </a>
+  {% endif %}
+  {% if page.next.url %}
+    <a href="{{page.next.url}}" class="next">
+    	<h3>{{page.next.title}}</h3>
+    	<span>{{page.next.date}}</span>
+    </a>
+  {% else if page.previous.previous.url %}
+    <a href="{{page.previous.previous.url}}" class="next">
+    	<h3>{{page.previous.previous.title}}</h3>
+    	<span>{{page.previous.previous.date}}</span>
+    </a>
+  {% endif %}
+</div>

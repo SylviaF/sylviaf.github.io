@@ -2,7 +2,7 @@
 layout: post
 title:  "opera mini浏览器的兼容"
 date:   2015-08-24 17:47:15
-categories: "兼容"
+categories: [兼容]
 ---
 此文`opera mini浏览器`(注意：不是`opera浏览器`)的兼容的一些总结。
 

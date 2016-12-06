@@ -1,6 +1,6 @@
 ---
 layout: page
-title: 关于 方大米的前端随记
+title: about
 permalink: /about/
 ---
 方大米的前端知识的记录

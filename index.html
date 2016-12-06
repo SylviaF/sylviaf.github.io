@@ -7,7 +7,7 @@ layout: default
   <h1 class="page-heading">文章</h1>
 
   <ul class="post-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
       <li>
         <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
 
@@ -17,7 +17,22 @@ layout: default
       </li>
     {% endfor %}
   </ul>
-
+  {% if paginator.total_pages > 1 %}
+    <!-- Pagination links -->
+    <div class="pagination">
+      {% if paginator.previous_page %}
+        <a href="{{ paginator.previous_page_path }}" class="previous"><i class="fa fa-caret-left"></i></a>
+      {% else %}
+        <span class="previous disabled"><i class="fa fa-caret-left"></i></span>
+      {% endif %}
+      <span class="page_number ">{{ paginator.page }} of {{ paginator.total_pages }}</span>
+      {% if paginator.next_page %}
+        <a href="{{ paginator.next_page_path }}" class="next"><i class="fa fa-caret-right"></i></a>
+      {% else %}
+        <span class="next disabled"><i class="fa fa-caret-right"></i></span>
+      {% endif %}
+    </div>
+  {% endif %}
   <!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
 
 </div>

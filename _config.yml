@@ -8,7 +8,13 @@ github_username:  sylviaf
 
 # Build settings
 markdown: kramdown
-permalink: /:year/:month/:day/:title
+#permalink: /:year/:month/:day/:title
+permalink: /:title
+gems: [jekyll-paginate]
+
+# 分页
+paginate: 15
+paginate_path: "page:num"
 
 # 多说的评论功能配置
 comments:

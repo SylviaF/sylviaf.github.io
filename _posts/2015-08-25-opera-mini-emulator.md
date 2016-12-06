@@ -2,7 +2,7 @@
 layout: post
 title: "opera mini浏览器的模拟器"
 date:   2015-08-25 14:50:15
-categories: "兼容"
+categories: [兼容]
 ---
 为了方便我们开发适应于opera mini浏览器的网页，我尝试在PC上安装opera mini的浏览器。  
 

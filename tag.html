@@ -1,0 +1,49 @@
+---
+layout: page
+title: tags
+permalink: /tag/
+---
+<style type="text/css">
+	.page-content > .wrapper {
+	    padding: 0;
+	    background: none;
+	}
+	.cate{
+		margin-bottom: 30px;
+	}
+	.block{
+		background: rgba(255,255,255,0.9);
+        border-radius: 10px;
+		padding: 20px;
+	}
+	.cate:last-child{
+		border-bottom: none;
+	}
+	.post-list {
+	    margin-left: 30px;
+	}
+	.tags{
+		margin-bottom: 20px;
+	}
+</style>
+<div class="tags">
+{% for category in site.categories %}
+	<a class="tag" href="#{{ category | first }}">
+		{{ category | first }} <i>{{ category | last | size }}</i>
+	</a>
+{% endfor %}
+</div>
+{% for category in site.categories %}
+<div class="cate block">
+	<a id="{{ category | first }}"></a>
+	<h2>{{ category | first }}</h2>
+	<ul class="post-list">
+	  {% for post in category.last %}
+	  	<li>
+	  		<span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+	      	<a class="post-link" href="{{ post.url }}">{{ post.title }}</a>
+	    </li>
+	  {% endfor %}
+	</ul>
+</div>
+{% endfor %}

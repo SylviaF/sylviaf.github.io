@@ -8,12 +8,16 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
+html, body{
+    height: 100%;
+    overflow: auto;
+}
 
 /**
  * Basic styling
  */
 body {
+    // position: relative;
     font-family: $base-font-family;
     font-size: $base-font-size;
     line-height: $base-line-height;
@@ -21,6 +25,7 @@ body {
     color: $text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
+    background: url(../images/bg/SanFrancisco.png) center top no-repeat;
 }
 
 
@@ -167,6 +172,7 @@ pre {
         max-width:         calc(#{$content-width} - (#{$spacing-unit}));
         padding-right: $spacing-unit / 2;
         padding-left: $spacing-unit / 2;
+        margin: 10px;
     }
 }
 
@@ -201,6 +207,30 @@ pre {
             fill: $grey-color;
         }
     }
+}
+
+.tag {
+    white-space: nowrap;
+    display: inline-block;
+    padding: 2px 10px;
+    margin: 4px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.55);
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+.tag i{
+    font-size: 10px;
+    font-size: .625rem;
+    vertical-align: super;
+}
+.tag:hover{
+    background-color: rgb(0, 0, 0);
+}
+.tag:hover, .tag:visited{
+    color: #fff;
+    text-decoration: none;
 }
 
 table{border-collapse: collapse;border: 1px solid #d0d0d0;}
